@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>armory-ui</Name>
+  <Repository>scartech70/armory-ui</Repository>
+  <Registry>https://hub.docker.com/r/scartech70/armory-ui/</Registry>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/scartech70/armory-ui/</Support>
+  <Project/>
+  <Overview>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category>Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:3500]</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1631406818</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>proxynet</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3500</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/armory-ui/config.js</HostDir>
+      <ContainerDir>/usr/share/nginx/html/config.js</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="PORT" Target="80" Default="" Mode="tcp" Description="Container Port: 3500" Type="Port" Display="always" Required="true" Mask="false">3500</Config>
+  <Config Name="Config File" Target="/usr/share/nginx/html/config.js" Default="" Mode="rw" Description="Container Path: /usr/share/nginx/html/config.js" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/armory-ui/config.js</Config>
+</Container>

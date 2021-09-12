@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>armory-api</Name>
+  <Repository>scartech70/armory-api</Repository>
+  <Registry>https://hub.docker.com/r/scartech70/armory-api/</Registry>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/scartech70/armory-api/</Support>
+  <Project/>
+  <Overview>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the containerTET</Overview>
+  <Category>Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1631407216</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the containerTET</Description>
+  <Networking>
+    <Mode>proxynet</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/armory-api</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>5000</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://armory.scarborough.tech</Value>
+      <Name>CORS_ORIGIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>JWT_SECRET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>DB_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>DB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>/data/logs</Value>
+      <Name>LOG_DIR</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="PORT" Target="PORT" Default="" Mode="" Description="Container Variable: PORT" Type="Variable" Display="always" Required="true" Mask="false">5000</Config>
+  <Config Name="CORS_ORIGIN" Target="CORS_ORIGIN" Default="" Mode="" Description="Container Variable: CORS_ORIGIN" Type="Variable" Display="always" Required="true" Mask="false">https://armory.scarborough.tech</Config>
+  <Config Name="JWT_SECRET" Target="JWT_SECRET" Default="" Mode="" Description="Container Variable: JWT_SECRET" Type="Variable" Display="always" Required="true" Mask="false">KEY</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="" Mode="" Description="Container Variable: DB_NAME" Type="Variable" Display="always" Required="true" Mask="false">DB_NAME</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="true" Mask="false">IP_ADDRESS</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="" Mode="" Description="Container Variable: DB_USER" Type="Variable" Display="always" Required="true" Mask="false">DB_USER</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="Container Variable: DB_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true">DB_PASSWORD</Config>
+  <Config Name="App Port" Target="5000" Default="" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="LOG_DIR" Target="LOG_DIR" Default="" Mode="" Description="Container Variable: LOG_DIR" Type="Variable" Display="always" Required="true" Mask="false">/data/logs</Config>
+  <Config Name="Log Path" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/armory-api</Config>
+</Container>
