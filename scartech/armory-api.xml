@@ -9,18 +9,18 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/scartech70/armory-api/</Support>
   <Project/>
-  <Overview>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the containerTET</Overview>
+  <Overview>API for the Armory 2A management app.</Overview>
   <Category>Tools: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://raw.githubusercontent.com/scartech/docker-templates/main/scartech/img/armory.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1631407216</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the containerTET</Description>
+  <Description>API for the Armory 2A management app.</Description>
   <Networking>
     <Mode>proxynet</Mode>
     <Publish>

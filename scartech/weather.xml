@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Weather Dashboard</Name>
+  <Repository>scartech70/weather</Repository>
+  <Registry>https://hub.docker.com/r/scartech70/weather/</Registry>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/scartech70/weather/</Support>
+  <Project/>
+  <Overview>Weather dashboard using the Weatherbit.io API.</Overview>
+  <Category>Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:3600]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/scartech/docker-templates/main/scartech/img/armory.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1631406818</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Weather dashboard using the Weatherbit.io API.</Description>
+  <Networking>
+    <Mode>proxynet</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3600</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="PORT" Target="80" Default="" Mode="tcp" Description="Container Port: 3600" Type="Port" Display="always" Required="true" Mask="false">3600</Config>
+</Container>
